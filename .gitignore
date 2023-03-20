@@ -106,3 +106,6 @@ dist
 
 #config file
 src/config/dev-files/dev-config.json
+
+#env files
+.vscode

@@ -1,4 +1,6 @@
-import config from "./src/config/config"
+import {Config} from "./src/config/Config"
+import logger from "./src/config/logger/Logger"
 
-console.log("running")
-console.log(config)
+const config : Config = new Config()
+
+logger.debug(config)
