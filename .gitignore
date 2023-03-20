@@ -109,3 +109,6 @@ src/config/dev-files/dev-config.json
 
 #env files
 .vscode
+
+#result files
+result
