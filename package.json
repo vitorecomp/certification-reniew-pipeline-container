@@ -1,0 +1,20 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Container enabling the renovation or download of a ZeroSSL certificate with google domains",
+  "main": "index.js",
+  "scripts": {
+    "generate-cert": "node dist/main.js",
+    "dev-test": "export NODE_ENV=dev && ts-node main.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "zerossl": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  }
+}
