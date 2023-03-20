@@ -12,4 +12,5 @@ export abstract class BaseConfig {
         this.zeroSSLKey = baseConfig.zeroSSLKey
         this.domain = baseConfig.domain
     }
+
 }
