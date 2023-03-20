@@ -1,6 +1,9 @@
 export abstract class BaseConfig {
-    protected zeroSSLKey: string = ""
-    protected domain: string = ""
+    public zeroSSLKey: string = ""
+    public domain: string = ""
+    public resultPath: string = "./result"
+    protected certificatePath: string = "certificate.crt"
+    protected bundleCertificationPath: string = "ca_bundle.crt"
 
     abstract setAttributes(): void
 
@@ -13,4 +16,11 @@ export abstract class BaseConfig {
         this.domain = baseConfig.domain
     }
 
+
+    getCertificationPath(): string {
+        return this.resultPath + '/' + this.certificatePath
+    }
+    getBundleCertificationPath(): string {
+        return this.resultPath + '/' + this.bundleCertificationPath
+    }
 }
